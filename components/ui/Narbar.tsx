@@ -24,10 +24,10 @@ export const Narbar = () => {
       />
 
       <Link href="/">
-        <Text color="white" h2>
+        <Text color="black" h2>
           P
         </Text>
-        <Text color="white" h3>
+        <Text color="black" h3>
           okémon
         </Text>
       </Link>

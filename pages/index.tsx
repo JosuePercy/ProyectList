@@ -16,7 +16,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
   const numResult = 100;
   const pageSize = Math.ceil(pokemons.length / numResult);
   /**
-   * Incrementa el listado de los pokemones
+   * Incrementa el listado de los pokemones@
    */
   useEffect(() => {
     setCurrentPokemons((current) => [
@@ -88,9 +88,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const pokemons: SmallPokemon[] = data.results.map((poke, i) => ({
     ...poke,
     id: i + 1,
-    img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
-      i + 1
-    }.svg`,
+    img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${i + 1
+      }.svg`,
   }));
 
   return {
